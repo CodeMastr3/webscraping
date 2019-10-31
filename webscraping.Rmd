@@ -34,7 +34,7 @@ html4 <- read_html(my_url)
 ### This chunk does the actual scraping of the html
 #### The function returns a tibble of the data scraped
 
-```{r}
+```{r warning=FALSE}
 read_class_schedule <- function(url) {
 
   classes <- url %>% html_nodes(".classrow")
